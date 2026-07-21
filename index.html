@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Developer | Mobile Apps, Websites & Custom Software</title>
+  <meta name="description" content="AR Developer - Building Powerful Mobile Apps, Modern Websites & Custom Software. Full-stack development agency specializing in Flutter, Laravel, PHP, Firebase, and Cloud Architecture.">
+  <meta name="keywords" content="AR Developer, Mobile App Development, Website Development, Flutter Developer, Laravel Development, Custom Software, PHP, Firebase Integration, IT Consulting">
+  <meta name="author" content="AR Developer">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="AR Developer | Mobile Apps, Websites & Custom Software">
+  <meta property="og:description" content="Building Powerful Mobile Apps, Modern Websites & Custom Software with cutting-edge technologies.">
+  <meta property="og:image" content="assets/image/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/image/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Preloader Overlay
+       ========================================================================== -->
+  <div id="preloader" aria-label="Loading page">
+    <div class="spinner-box">
+      <div class="spinner-circle"></div>
+      <img src="assets/image/logo.png" alt="AR Developer Logo" class="spinner-logo">
+    </div>
+    <span class="preloader-text">AR Developer</span>
+  </div>
+
+  <!-- ==========================================================================
+       Top Scroll Progress Bar
+       ========================================================================== -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- ==========================================================================
+       Sticky Glass Navbar
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="AR Developer Home">
+        <img src="assets/image/logo.png" alt="AR Developer Logo" class="logo-img">
+        <span class="brand-text">AR <span>Developer</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#technologies" class="nav-link">Tech</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#our-apps" class="nav-link">Apps</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#why-us" class="nav-link">Why Us</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Social Icons & CTA -->
+      <div class="nav-socials">
+        <a href="https://g.dev/ardeveloper25" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="Google Developer Profile" aria-label="Google Developer Profile"><i class="fab fa-google"></i></a>
+        <a href="https://github.com/ardeveloper" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ar-devlopers-845097423" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/ardeveloper25" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#contact" class="btn btn-primary nav-cta">Get a Quote</a>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Backdrop overlay for mobile drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Mobile Drawer Navigation -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Menu">
+    <div>
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 30px;">
+        <img src="assets/image/logo.png" alt="AR Developer Logo" style="height: 38px;">
+        <span class="brand-text" style="font-size: 1.2rem;">AR <span>Developer</span></span>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="#hero" class="mobile-nav-link active">Home</a>
+        <a href="#about" class="mobile-nav-link">About Us</a>
+        <a href="#services" class="mobile-nav-link">Our Services</a>
+        <a href="#technologies" class="mobile-nav-link">Technologies</a>
+        <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+        <a href="#our-apps" class="mobile-nav-link">Our Apps</a>
+        <a href="#process" class="mobile-nav-link">Process</a>
+        <a href="#why-us" class="mobile-nav-link">Why Choose Us</a>
+        <a href="#follow-us" class="mobile-nav-link">Social Links</a>
+        <a href="#contact" class="mobile-nav-link">Contact Us</a>
+      </div>
+    </div>
+    <div>
+      <a href="#contact" class="btn btn-primary" style="width: 100%; margin-bottom: 20px;">Request Consultation</a>
+      <div class="mobile-drawer-socials">
+        <a href="https://g.dev/ardeveloper25" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="Google Developer"><i class="fab fa-google"></i></a>
+        <a href="https://facebook.com/(i can put after)" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/ardeveloper25" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ar-devlopers-845097423" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/ardeveloper" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/ardeveloper25" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://youtube.com/@ardeveloper25" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://t.me/(i can put after)" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <!-- Left Content -->
+      <div data-aos="fade-right" data-aos-duration="1000">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span style="font-size: 0.85rem; font-weight: 700; color: #fff;">⚡ Next-Gen Software Development Studio</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering Superior Digital Solutions for <span class="gradient-text-primary">Global Visionaries.</span>
+        </h1>
+
+        <div class="hero-subtitle">
+          We specialize in <span class="typing-text" id="typingText"></span>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#services" class="btn btn-primary">
+            <span>Explore Services</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#portfolio" class="btn btn-secondary">
+            <i class="fas fa-layer-group"></i>
+            <span>View Portfolio</span>
+          </a>
+        </div>
+
+        <div class="hero-stats-mini">
+          <div class="stat-item-mini">
+            <h4>150+</h4>
+            <p>Projects Delivered</p>
+          </div>
+          <div class="stat-item-mini">
+            <h4>98.9%</h4>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="stat-item-mini">
+            <h4>10+</h4>
+            <p>Tech Stack Mastery</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Glass Code Card -->
+      <div class="hero-visual" data-aos="zoom-in" data-aos-delay="200">
+        <div class="glass-card hero-card-main">
+          <div class="hero-code-header">
+            <div class="code-circle red"></div>
+            <div class="code-circle yellow"></div>
+            <div class="code-circle green"></div>
+            <span class="code-title">AR_Developer.config.ts</span>
+          </div>
+          <pre class="code-block"><code><span class="code-keyword">import</span> { Agency } <span class="code-keyword">from</span> <span class="code-string">'@ar-developer/core'</span>;
+
+<span class="code-keyword">export const</span> <span class="code-var">arDeveloper</span> = <span class="code-keyword">new</span> <span class="code-func">Agency</span>({
+  name: <span class="code-string">'AR Developer'</span>,
+  mission: <span class="code-string">'Building Powerful Digital Apps'</span>,
+  expertise: [
+    <span class="code-string">'Flutter Mobile Apps'</span>,
+    <span class="code-string">'Laravel & PHP Backend'</span>,
+    <span class="code-string">'Firebase Cloud Tech'</span>,
+    <span class="code-string">'High-Scale Custom Web'</span>
+  ],
+  status: <span class="code-string">'READY_TO_SCALE'</span>
+});
+
+<span class="code-var">arDeveloper</span>.<span class="code-func">buildYourDream</span>();</code></pre>
+        </div>
+
+        <!-- Floating Badges -->
+        <div class="floating-badge badge-top-right">
+          <div class="badge-icon"><i class="fas fa-mobile-alt"></i></div>
+          <div class="badge-text">
+            <strong>Flutter & Mobile</strong>
+            <span>iOS + Android Native Performance</span>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-bottom-left">
+          <div class="badge-icon" style="background: var(--grad-accent); color: #fff;"><i class="fas fa-server"></i></div>
+          <div class="badge-text">
+            <strong>Laravel & Cloud</strong>
+            <span>Secure Enterprise Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       About Company Section
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left Column: Visual Card -->
+        <div data-aos="fade-right">
+          <div class="experience-card">
+            <div class="exp-number">05+</div>
+            <div class="exp-title">Years of Engineering Excellence & Innovation</div>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">
+              At AR Developer, we transform complex business challenges into sleek, high-performing software applications. Our dedicated team delivers robust web platforms, cross-platform mobile apps, and scalable cloud solutions tailored for modern growth.
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <span class="section-tag" style="margin: 0;"><i class="fas fa-check-circle"></i> Clean Code</span>
+              <span class="section-tag" style="margin: 0;"><i class="fas fa-check-circle"></i> Agile Method</span>
+              <span class="section-tag" style="margin: 0;"><i class="fas fa-check-circle"></i> Security-First</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Content & Features -->
+        <div data-aos="fade-left">
+          <div class="section-tag">About Company</div>
+          <h2 class="section-title">Architecting Digital Products That <span>Drive Success</span></h2>
+          <p style="color: var(--text-muted); margin-bottom: 24px; font-size: 1.05rem;">
+            We are a client-focused tech studio committed to engineering pixel-perfect websites, intuitive mobile applications, and enterprise custom software.
+          </p>
+
+          <div class="about-features-grid">
+            <div class="glass-card about-feature-box">
+              <i class="fas fa-rocket"></i>
+              <h4>Rapid Execution</h4>
+              <p>Agile sprints ensuring timely delivery without compromising code quality.</p>
+            </div>
+            <div class="glass-card about-feature-box">
+              <i class="fas fa-shield-alt"></i>
+              <h4>Enterprise Security</h4>
+              <p>Built with industry security standards and data protection protocols.</p>
+            </div>
+            <div class="glass-card about-feature-box">
+              <i class="fas fa-chart-line"></i>
+              <h4>Scalable Architecture</h4>
+              <p>Future-proof infrastructure ready to handle millions of active users.</p>
+            </div>
+            <div class="glass-card about-feature-box">
+              <i class="fas fa-headset"></i>
+              <h4>Dedicated Support</h4>
+              <p>Continuous maintenance, updates, and 24/7 technical monitoring.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Our Services Section (11 Services)
+       ========================================================================== -->
+  <section class="section" id="services">
+    <div class="container text-center">
+      <div class="section-tag">Our Expertise</div>
+      <h2 class="section-title">End-to-End Software <span>Development Services</span></h2>
+      <p class="section-subtitle">Empowering startups and enterprises with high-caliber technology solutions tailored to your unique requirements.</p>
+
+      <div class="services-grid">
+        <!-- 1. Android App Development -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="service-icon-wrapper"><i class="fab fa-android"></i></div>
+            <h3>Android App Development</h3>
+            <p>Custom native Android applications designed for high performance, smooth UX, and seamless integration with hardware features across modern devices.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 2. iOS App Development -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="150">
+          <div>
+            <div class="service-icon-wrapper"><i class="fab fa-apple"></i></div>
+            <h3>iOS App Development</h3>
+            <p>Premium Apple iOS applications crafted with Swift and modern UI guidelines, optimized for iPhone, iPad, and Apple ecosystem standards.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 3. Flutter Development -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="service-icon-wrapper"><i class="fas fa-mobile"></i></div>
+            <h3>Flutter Development</h3>
+            <p>Cross-platform mobile applications powered by Flutter & Dart, delivering single-codebase efficiency with 60 FPS native performance on iOS and Android.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 4. Website Development -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="service-icon-wrapper"><i class="fas fa-laptop-code"></i></div>
+            <h3>Website Development</h3>
+            <p>Fully responsive, lightning-fast web applications and corporate portals built with clean HTML5, CSS3, JavaScript, and modern web architectures.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 5. Custom Software -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="150">
+          <div>
+            <div class="service-icon-wrapper"><i class="fas fa-cogs"></i></div>
+            <h3>Custom Software Development</h3>
+            <p>Bespoke enterprise software applications tailored to streamline operations, automate workflows, and boost business productivity.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 6. Laravel Development -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="service-icon-wrapper"><i class="fab fa-laravel"></i></div>
+            <h3>Laravel Development</h3>
+            <p>Robust backend web applications and enterprise portals constructed using Laravel framework, complete with secure authentication and database ORM.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 7. PHP Development -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="service-icon-wrapper"><i class="fab fa-php"></i></div>
+            <h3>PHP Development</h3>
+            <p>High-efficiency PHP web scripts, custom CMS platforms, and dynamic server-side applications engineered for speed and reliability.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 8. Firebase Integration -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="150">
+          <div>
+            <div class="service-icon-wrapper"><i class="fas fa-fire"></i></div>
+            <h3>Firebase Integration</h3>
+            <p>Real-time Firestore database setup, Firebase Authentication, Cloud Messaging push notifications, and serverless Cloud Functions architecture.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 9. API Development -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="service-icon-wrapper"><i class="fas fa-network-wired"></i></div>
+            <h3>API Development & Integration</h3>
+            <p>Secure RESTful & GraphQL web services, payment gateway integrations, third-party API webhooks, and microservice connectivity.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 10. Technical Support -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="service-icon-wrapper"><i class="fas fa-tools"></i></div>
+            <h3>Technical Support & Maintenance</h3>
+            <p>Proactive server monitoring, bug fixes, software updates, security patches, and performance optimization to ensure zero downtime.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- 11. IT Consulting -->
+        <div class="glass-card service-card" data-aos="fade-up" data-aos-delay="150">
+          <div>
+            <div class="service-icon-wrapper"><i class="fas fa-user-tie"></i></div>
+            <h3>IT Consulting & Strategy</h3>
+            <p>Strategic technology advice, software architecture reviews, digital transformation roadmaps, and cloud migration strategies for business scaling.</p>
+          </div>
+          <a href="#contact" class="service-link"><span>Discuss Project</span> <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Technologies Section
+       ========================================================================== -->
+  <section class="section" id="technologies">
+    <div class="container text-center">
+      <div class="section-tag">Tech Stack</div>
+      <h2 class="section-title">Powered by Modern <span>Technologies</span></h2>
+      <p class="section-subtitle">We leverage industry-leading tools and frameworks to craft world-class software products.</p>
+
+      <div class="tech-grid">
+        <!-- Flutter -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="tech-icon-box icon-flutter"><i class="fas fa-mobile-alt"></i></div>
+          <div class="tech-name">Flutter</div>
+          <span class="tech-level-badge">Mobile Apps</span>
+        </div>
+
+        <!-- Laravel -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="tech-icon-box icon-laravel"><i class="fab fa-laravel"></i></div>
+          <div class="tech-name">Laravel</div>
+          <span class="tech-level-badge">Backend Framework</span>
+        </div>
+
+        <!-- PHP -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="tech-icon-box icon-php"><i class="fab fa-php"></i></div>
+          <div class="tech-name">PHP</div>
+          <span class="tech-level-badge">Server Language</span>
+        </div>
+
+        <!-- MySQL -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="250">
+          <div class="tech-icon-box icon-mysql"><i class="fas fa-database"></i></div>
+          <div class="tech-name">MySQL</div>
+          <span class="tech-level-badge">Relational Database</span>
+        </div>
+
+        <!-- Firebase -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="tech-icon-box icon-firebase"><i class="fas fa-fire"></i></div>
+          <div class="tech-name">Firebase</div>
+          <span class="tech-level-badge">Cloud Services</span>
+        </div>
+
+        <!-- HTML5 -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="tech-icon-box icon-html"><i class="fab fa-html5"></i></div>
+          <div class="tech-name">HTML5</div>
+          <span class="tech-level-badge">Web Markup</span>
+        </div>
+
+        <!-- CSS3 -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="tech-icon-box icon-css"><i class="fab fa-css3-alt"></i></div>
+          <div class="tech-name">CSS3</div>
+          <span class="tech-level-badge">Modern Styling</span>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="tech-icon-box icon-js"><i class="fab fa-js-square"></i></div>
+          <div class="tech-name">JavaScript</div>
+          <span class="tech-level-badge">Frontend Logic</span>
+        </div>
+
+        <!-- Bootstrap -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="250">
+          <div class="tech-icon-box icon-bootstrap"><i class="fab fa-bootstrap"></i></div>
+          <div class="tech-name">Bootstrap</div>
+          <span class="tech-level-badge">UI Layout</span>
+        </div>
+
+        <!-- Git -->
+        <div class="glass-card tech-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="tech-icon-box icon-git"><i class="fab fa-git-alt"></i></div>
+          <div class="tech-name">Git</div>
+          <span class="tech-level-badge">Version Control</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Portfolio Section with Category Filter
+       ========================================================================== -->
+  <section class="section" id="portfolio">
+    <div class="container text-center">
+      <div class="section-tag">Case Studies</div>
+      <h2 class="section-title">Our Featured <span>Work & Projects</span></h2>
+      <p class="section-subtitle">Explore a selection of mobile apps, web applications, and custom software systems crafted for our global clients.</p>
+
+      <!-- Portfolio Category Filter Buttons -->
+      <div class="portfolio-filters" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="software">Custom Software</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <!-- Project 1: Mobile App -->
+        <div class="glass-card portfolio-card" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-img-wrapper">
+            <img src="assets/image/portfolio-1.jpg" alt="Fintech Mobile App UI">
+            <div class="portfolio-overlay">
+              <a href="#contact" class="overlay-btn" title="View Details"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-content text-left">
+            <span class="portfolio-tag">Flutter & Firebase</span>
+            <h3 class="portfolio-title">Next-Gen Fintech Wallet App</h3>
+            <p class="portfolio-desc">High-security cross-platform mobile wallet supporting real-time transactions, biometric login, and push notifications.</p>
+          </div>
+        </div>
+
+        <!-- Project 2: Web App -->
+        <div class="glass-card portfolio-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-img-wrapper">
+            <img src="assets/image/portfolio-2.jpg" alt="SaaS Analytics Web Platform">
+            <div class="portfolio-overlay">
+              <a href="#contact" class="overlay-btn" title="View Details"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-content text-left">
+            <span class="portfolio-tag">Laravel & JS</span>
+            <h3 class="portfolio-title">SaaS Analytics Dashboard</h3>
+            <p class="portfolio-desc">Interactive business intelligence web app with real-time data visualizations, team management, and subscription billing.</p>
+          </div>
+        </div>
+
+        <!-- Project 3: Custom Software -->
+        <div class="glass-card portfolio-card" data-category="software" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-img-wrapper">
+            <img src="assets/image/portfolio-3.jpg" alt="Enterprise Logistics Software">
+            <div class="portfolio-overlay">
+              <a href="#contact" class="overlay-btn" title="View Details"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio-content text-left">
+            <span class="portfolio-tag">PHP & MySQL</span>
+            <h3 class="portfolio-title">Enterprise Logistics Suite</h3>
+            <p class="portfolio-desc">Custom supply chain management software automating fleet tracking, warehouse inventory, and automated dispatch APIs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Our Apps Section (Google Play Developer Showcase)
+       ========================================================================== -->
+  <section class="section" id="our-apps">
+    <div class="container text-center">
+      <div class="section-tag"><i class="fab fa-google-play"></i> Published Apps</div>
+      <h2 class="section-title">Our Published <span>Google Play Apps</span></h2>
+      <p class="section-subtitle">Explore high-quality Android applications published under our official Google Play Developer account.</p>
+
+      <div class="apps-grid" id="appsGrid">
+        <!-- Fallback HTML Cards (dynamically loaded from apps.json) -->
+        <div class="glass-card app-card" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="app-card-header">
+              <img src="https://play-lh.googleusercontent.com/RQ090QGfWVVfkOHfPNVN_n3DrhuNbITecM68mDCbN2AOtb2vnaawf83_ou7hEaG7FXEMWKEmTOhN3HjOQCVps4Y=w480-h960-rw" alt="DIMS Hira Book Icon" class="app-icon" loading="lazy">
+              <div class="app-title-group">
+                <h3>DIMS Hira Book</h3>
+                <span class="app-category">Productivity</span>
+              </div>
+            </div>
+            <p class="app-desc">Designed for diamond polishing units in Gujarat, helping manage the workflow between admins, managers, and artisans with smooth task delegation, progress tracking, and cloud data security.</p>
+            <div class="app-meta-row">
+              <div class="app-rating"><i class="fas fa-star"></i> <span>4.8</span></div>
+              <div class="app-downloads"><i class="fas fa-download"></i> <span>1K+</span></div>
+            </div>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.ar.dims" target="_blank" rel="noopener noreferrer" class="app-play-btn">
+            <i class="fab fa-google-play"></i> <span>View on Google Play</span>
+          </a>
+        </div>
+
+        <div class="glass-card app-card" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="app-card-header">
+              <img src="https://play-lh.googleusercontent.com/UANjVScoUdPHTIs82XmgX6Va_BZ8tYauujcpAIZ4jwLcmDkSO4QfNd6ZjMm1js6M4AEPpZQboPwFmrqPLDTX-R0=w480-h960-rw" alt="Chandla Book Icon" class="app-icon" loading="lazy">
+              <div class="app-title-group">
+                <h3>Chandla Book</h3>
+                <span class="app-category">Books & Reference</span>
+              </div>
+            </div>
+            <p class="app-desc">Chandla Book Provide To Write Wedding & Engagement Functions Vyvhar Record Digitally Store to Device.</p>
+            <div class="app-meta-row">
+              <div class="app-rating"><i class="fas fa-star"></i> <span>4.9</span></div>
+              <div class="app-downloads"><i class="fas fa-download"></i> <span>100+</span></div>
+            </div>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.ar.chandlabook" target="_blank" rel="noopener noreferrer" class="app-play-btn">
+            <i class="fab fa-google-play"></i> <span>View on Google Play</span>
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px;">
+        <a href="https://play.google.com/store/apps/dev?id=7939439894392121010" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <i class="fab fa-google-play"></i>
+          <span>View All Apps on Google Play</span>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Development Process Section
+       ========================================================================== -->
+  <section class="section" id="process">
+    <div class="container text-center">
+      <div class="section-tag">How We Work</div>
+      <h2 class="section-title">Our Streamlined <span>Development Process</span></h2>
+      <p class="section-subtitle">A proven 5-stage engineering methodology designed to deliver flawless software on time and within budget.</p>
+
+      <div class="process-timeline">
+        <!-- Stage 1 -->
+        <div class="process-step" data-aos="fade-right">
+          <div class="step-node">1</div>
+          <div class="glass-card step-card text-left">
+            <div class="step-number">Phase 01</div>
+            <h3 class="step-title">Discovery & Requirement Analysis</h3>
+            <p class="step-desc">We collaborate with you to define project goals, conduct tech stack feasibility analysis, and build a detailed project roadmap.</p>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="process-step" data-aos="fade-left">
+          <div class="step-node">2</div>
+          <div class="glass-card step-card text-left">
+            <div class="step-number">Phase 02</div>
+            <h3 class="step-title">UI/UX Architecture & Prototype</h3>
+            <p class="step-desc">Creating wireframes, interactive UI mockups, and database architecture designed for optimal user experience and performance.</p>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="process-step" data-aos="fade-right">
+          <div class="step-node">3</div>
+          <div class="glass-card step-card text-left">
+            <div class="step-number">Phase 03</div>
+            <h3 class="step-title">Agile Development & Sprinting</h3>
+            <p class="step-desc">Writing clean, modular code with continuous integration, Git versioning, and transparent sprint progress updates.</p>
+          </div>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="process-step" data-aos="fade-left">
+          <div class="step-node">4</div>
+          <div class="glass-card step-card text-left">
+            <div class="step-number">Phase 04</div>
+            <h3 class="step-title">Quality Assurance & Security Testing</h3>
+            <p class="step-desc">Rigorous automated testing, cross-device QA validation, vulnerability scans, and performance optimizations.</p>
+          </div>
+        </div>
+
+        <!-- Stage 5 -->
+        <div class="process-step" data-aos="fade-right">
+          <div class="step-node">5</div>
+          <div class="glass-card step-card text-left">
+            <div class="step-number">Phase 05</div>
+            <h3 class="step-title">Deployment & Ongoing Support</h3>
+            <p class="step-desc">Seamless cloud server deployment, Google Play & App Store publishing, plus 24/7 post-launch technical support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Why Choose Us Section & Animated Statistics Counters
+       ========================================================================== -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="section-title">The Advantage of Working With <span>AR Developer</span></h2>
+        <p class="section-subtitle">We combine technical mastery with business acumen to build software that creates measurable value.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="glass-card why-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="why-icon"><i class="fas fa-code"></i></div>
+          <h3>Clean & Maintainable Code</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Strict compliance with industry coding standards ensuring easy future updates and scaling.</p>
+        </div>
+
+        <div class="glass-card why-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="why-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Optimized Performance</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Blazing fast load speeds, optimized database queries, and lightweight assets.</p>
+        </div>
+
+        <div class="glass-card why-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="why-icon"><i class="fas fa-lock"></i></div>
+          <h3>Security Guaranteed</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">End-to-end data encryption, CSRF protection, and secure API authorization.</p>
+        </div>
+
+        <div class="glass-card why-card" data-aos="zoom-in" data-aos-delay="250">
+          <div class="why-icon"><i class="fas fa-clock"></i></div>
+          <h3>On-Time Delivery</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Structured milestones and strict timeline management to launch your project on schedule.</p>
+        </div>
+      </div>
+
+      <!-- Animated Counters Bar -->
+      <div class="counter-grid" id="counterSection" data-aos="fade-up">
+        <div class="counter-item">
+          <div class="counter-number" data-target="150" data-suffix="+">0</div>
+          <div class="counter-label">Projects Completed</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number" data-target="98" data-suffix="%">0</div>
+          <div class="counter-label">Client Satisfaction</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number" data-target="10" data-suffix="+">0</div>
+          <div class="counter-label">Tech Stack Mastery</div>
+        </div>
+        <div class="counter-item">
+          <div class="counter-number" data-target="24" data-suffix="/7">0</div>
+          <div class="counter-label">Dedicated Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Client Testimonials Section
+       ========================================================================== -->
+  <section class="section" id="testimonials">
+    <div class="container text-center">
+      <div class="section-tag">Testimonials</div>
+      <h2 class="section-title">What Our Clients <span>Say About Us</span></h2>
+      <p class="section-subtitle">Real feedback from business leaders and founders who trust AR Developer for their core digital products.</p>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="glass-card testimonial-card text-left" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"AR Developer transformed our vision into an incredible Flutter mobile app. Their attention to performance, UI details, and backend security exceeded our highest expectations!"</p>
+          </div>
+          <div class="client-profile">
+            <div class="client-avatar">MS</div>
+            <div class="client-info">
+              <h4>Michael Sterling</h4>
+              <p>CEO, FinTech Global</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="glass-card testimonial-card text-left" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"The Laravel web platform created by AR Developer handled over 50,000 active users on launch day without a single glitch. True masters of scalable web architecture."</p>
+          </div>
+          <div class="client-profile">
+            <div class="client-avatar" style="background: var(--grad-accent); color: #fff;">SD</div>
+            <div class="client-info">
+              <h4>Sophia Davis</h4>
+              <p>Product Director, Nexa Systems</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="glass-card testimonial-card text-left" data-aos="fade-up" data-aos-delay="300">
+          <div>
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Outstanding technical competence, clear communication, and reliable ongoing support. AR Developer is our go-to software engineering partner."</p>
+          </div>
+          <div class="client-profile">
+            <div class="client-avatar" style="background: var(--grad-warm); color: #fff;">RK</div>
+            <div class="client-info">
+              <h4>Rahul Kapoor</h4>
+              <p>Founder, CloudVentures</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ Accordion Section
+       ========================================================================== -->
+  <section class="section" id="faq">
+    <div class="container text-center">
+      <div class="section-tag">Got Questions?</div>
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+      <p class="section-subtitle">Find quick answers to common inquiries about our software development services and process.</p>
+
+      <div class="faq-wrapper text-left" data-aos="fade-up">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <div class="faq-header">
+            <h3>What services does AR Developer provide?</h3>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <p>We provide full-lifecycle software development including Android and iOS mobile apps, Flutter cross-platform development, website development, Laravel & PHP web applications, Firebase cloud integration, custom software, RESTful API engineering, and technical consulting.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>How long does it take to develop a custom app or website?</h3>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <p>Project timelines depend on complexity. A standard web portal or mobile MVP typically takes 3 to 6 weeks, while large enterprise custom software systems can take 8 to 14 weeks. We provide clear milestone timelines before beginning any project.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Do you sign non-disclosure agreements (NDAs) to protect my project idea?</h3>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <p>Yes, absolutely! We prioritize intellectual property protection and confidentiality. We sign strict Non-Disclosure Agreements (NDAs) prior to discussing any project specifications.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Will I have full ownership of the source code?</h3>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <p>Yes. Upon completion and final handover, 100% of the code repositories, copyright, design assets, and intellectual property belong entirely to you.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3>Do you offer post-launch support and maintenance?</h3>
+            <div class="faq-icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-body">
+            <p>Yes, we provide dedicated ongoing support packages including server monitoring, security updates, feature additions, and bug fixes to ensure your software remains in top condition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Dedicated "Follow Us" Social Section
+       ========================================================================== -->
+  <section class="section" id="follow-us">
+    <div class="container text-center">
+      <div class="section-tag">Stay Connected</div>
+      <h2 class="section-title">Follow Us Across Our <span>Social Channels</span></h2>
+      <p class="section-subtitle">Join our online community for development tutorials, tech insights, and project updates.</p>
+
+      <div class="social-hub-grid">
+        <!-- Facebook -->
+        <a href="https://facebook.com/(i can put after)" target="_blank" rel="noopener noreferrer" class="glass-card social-card facebook" data-aos="zoom-in" data-aos-delay="100">
+          <div class="social-card-icon"><i class="fab fa-facebook-f"></i></div>
+          <h4>Facebook</h4>
+          <span>@ardeveloper</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/ardeveloper25" target="_blank" rel="noopener noreferrer" class="glass-card social-card instagram" data-aos="zoom-in" data-aos-delay="150">
+          <div class="social-card-icon"><i class="fab fa-instagram"></i></div>
+          <h4>Instagram</h4>
+          <span>@ardeveloper25</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/ar-devlopers-845097423" target="_blank" rel="noopener noreferrer" class="glass-card social-card linkedin" data-aos="zoom-in" data-aos-delay="200">
+          <div class="social-card-icon"><i class="fab fa-linkedin-in"></i></div>
+          <h4>LinkedIn</h4>
+          <span>AR Developers</span>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/ardeveloper" target="_blank" rel="noopener noreferrer" class="glass-card social-card github" data-aos="zoom-in" data-aos-delay="250">
+          <div class="social-card-icon"><i class="fab fa-github"></i></div>
+          <h4>GitHub</h4>
+          <span>@ardeveloper</span>
+        </a>
+
+        <!-- X (Twitter) -->
+        <a href="https://x.com/ardeveloper25" target="_blank" rel="noopener noreferrer" class="glass-card social-card twitter" data-aos="zoom-in" data-aos-delay="300">
+          <div class="social-card-icon"><i class="fab fa-x-twitter"></i></div>
+          <h4>X (Twitter)</h4>
+          <span>@ardeveloper25</span>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://youtube.com/@ardeveloper25" target="_blank" rel="noopener noreferrer" class="glass-card social-card youtube" data-aos="zoom-in" data-aos-delay="100">
+          <div class="social-card-icon"><i class="fab fa-youtube"></i></div>
+          <h4>YouTube</h4>
+          <span>@ardeveloper25</span>
+        </a>
+
+        <!-- Reddit -->
+        <a href="https://www.reddit.com/u/ardeveloper25" target="_blank" rel="noopener noreferrer" class="glass-card social-card reddit" data-aos="zoom-in" data-aos-delay="150">
+          <div class="social-card-icon"><i class="fab fa-reddit-alien"></i></div>
+          <h4>Reddit</h4>
+          <span>u/ardeveloper25</span>
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/(i can put after)" target="_blank" rel="noopener noreferrer" class="glass-card social-card telegram" data-aos="zoom-in" data-aos-delay="200">
+          <div class="social-card-icon"><i class="fab fa-telegram-plane"></i></div>
+          <h4>Telegram</h4>
+          <span>@ardeveloper</span>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/ardeveloper25" target="_blank" rel="noopener noreferrer" class="glass-card social-card whatsapp" data-aos="zoom-in" data-aos-delay="250">
+          <div class="social-card-icon"><i class="fab fa-whatsapp"></i></div>
+          <h4>WhatsApp</h4>
+          <span>Direct Chat</span>
+        </a>
+
+        <!-- Google Developer -->
+        <a href="https://g.dev/ardeveloper25" target="_blank" rel="noopener noreferrer" class="glass-card social-card google-dev" data-aos="zoom-in" data-aos-delay="350">
+          <div class="social-card-icon"><i class="fab fa-google"></i></div>
+          <h4>Google Developer</h4>
+          <span>g.dev/ardeveloper25</span>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:ar.devlopers25@gmail.com" class="glass-card social-card email" data-aos="zoom-in" data-aos-delay="300">
+          <div class="social-card-icon"><i class="fas fa-envelope"></i></div>
+          <h4>Email Us</h4>
+          <span>ar.devlopers25@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Form Section
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">Let's Connect</div>
+        <h2 class="section-title">Start Your Project With <span>AR Developer</span></h2>
+        <p class="section-subtitle">Have a project idea or software requirement? Send us a message and our team will reply within 24 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Cards Stack -->
+        <div class="contact-info-stack" data-aos="fade-right">
+          <div class="glass-card contact-info-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <h4>Email Address</h4>
+              <p><a href="mailto:ar.devlopers25@gmail.com">ar.devlopers25@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="glass-card contact-info-card">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-details">
+              <h4>WhatsApp Chat</h4>
+              <p><a href="https://wa.me/ardeveloper25" target="_blank" rel="noopener noreferrer">Message us on WhatsApp</a></p>
+            </div>
+          </div>
+
+          <div class="glass-card contact-info-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-details">
+              <h4>Office Headquarters</h4>
+              <p>Global Remote Engineering Studio</p>
+            </div>
+          </div>
+
+          <div class="glass-card contact-info-card">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-details">
+              <h4>Working Hours</h4>
+              <p>Mon - Sat: 9:00 AM - 8:00 PM EST</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="glass-card contact-form-card" data-aos="fade-left">
+          <form id="contactForm" novalidate>
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="formName">Your Name *</label>
+                <input type="text" id="formName" class="form-control" placeholder="e.g. John Doe">
+                <span class="error-msg">Please enter your name (min 2 characters).</span>
+              </div>
+              <div class="form-group">
+                <label for="formEmail">Your Email *</label>
+                <input type="email" id="formEmail" class="form-control" placeholder="john@example.com">
+                <span class="error-msg">Please enter a valid email address.</span>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="formSubject">Subject *</label>
+                <input type="text" id="formSubject" class="form-control" placeholder="Project Subject">
+                <span class="error-msg">Please enter a subject.</span>
+              </div>
+              <div class="form-group">
+                <label for="formService">Select Service *</label>
+                <select id="formService" class="form-control">
+                  <option value="" disabled selected>Choose a Service</option>
+                  <option value="android">Android App Development</option>
+                  <option value="ios">iOS App Development</option>
+                  <option value="flutter">Flutter Cross-Platform</option>
+                  <option value="web">Website Development</option>
+                  <option value="custom">Custom Software Development</option>
+                  <option value="laravel">Laravel Development</option>
+                  <option value="php">PHP Development</option>
+                  <option value="firebase">Firebase Integration</option>
+                  <option value="api">API Development</option>
+                  <option value="support">Technical Support</option>
+                  <option value="consulting">IT Consulting</option>
+                </select>
+                <span class="error-msg">Please select a service.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage">Project Details *</label>
+              <textarea id="formMessage" class="form-control" rows="5" placeholder="Tell us about your project requirements..."></textarea>
+              <span class="error-msg">Please provide project details (min 10 characters).</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glass Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+    <span class="toast-text">Thank you! Your message has been sent successfully.</span>
+  </div>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <img src="assets/image/logo.png" alt="AR Developer Logo">
+            <span class="brand-text">AR <span>Developer</span></span>
+          </a>
+          <p>Building Powerful Mobile Apps, Modern Websites & Custom Software solutions with cutting-edge tech.</p>
+          <div class="footer-socials">
+            <a href="https://g.dev/ardeveloper25" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="Google Developer Profile"><i class="fab fa-google"></i></a>
+            <a href="https://facebook.com/(i can put after)" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/ardeveloper25" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ar-devlopers-845097423" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ardeveloper" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/ardeveloper25" target="_blank" rel="noopener noreferrer" class="nav-social-icon"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#technologies">Tech Stack</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#process">Development Process</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Services Breakdown -->
+        <div>
+          <h4 class="footer-title">Our Services</h4>
+          <div class="footer-links">
+            <a href="#services">Android Development</a>
+            <a href="#services">iOS Development</a>
+            <a href="#services">Flutter Development</a>
+            <a href="#services">Web Development</a>
+            <a href="#services">Laravel & PHP</a>
+            <a href="#services">Firebase Integration</a>
+            <a href="#services">API Services</a>
+            <a href="#services">IT Consulting</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div>
+          <h4 class="footer-title">Stay Updated</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">Subscribe to our tech newsletter for development insights.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to AR Developer newsletter!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 <strong>AR Developer</strong>. All Rights Reserved.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#hero" style="color: var(--text-muted);">Privacy Policy</a>
+          <a href="#hero" style="color: var(--text-muted);">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Floating Widgets (WhatsApp Action & Back to Top)
+       ========================================================================== -->
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/ardeveloper25" target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Engine -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

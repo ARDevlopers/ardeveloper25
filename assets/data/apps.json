@@ -1,0 +1,26 @@
+[
+  {
+    "id": "com.ar.dims",
+    "name": "DIMS Hira Book",
+    "packageName": "com.ar.dims",
+    "category": "Productivity",
+    "rating": 4.8,
+    "reviewsCount": "7+",
+    "downloads": "1K+",
+    "shortDescription": "Designed for diamond polishing units in Gujarat, helping manage the workflow between admins, managers, and artisans with smooth task delegation, progress tracking, and cloud data security.",
+    "icon": "https://play-lh.googleusercontent.com/RQ090QGfWVVfkOHfPNVN_n3DrhuNbITecM68mDCbN2AOtb2vnaawf83_ou7hEaG7FXEMWKEmTOhN3HjOQCVps4Y=w480-h960-rw",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ar.dims"
+  },
+  {
+    "id": "com.ar.chandlabook",
+    "name": "Chandla Book",
+    "packageName": "com.ar.chandlabook",
+    "category": "Books & Reference",
+    "rating": 4.9,
+    "reviewsCount": "10+",
+    "downloads": "100+",
+    "shortDescription": "Chandla Book Provide To Write Wedding & Engagement Functions Vyvhar Record Digitally Store to Device.",
+    "icon": "https://play-lh.googleusercontent.com/UANjVScoUdPHTIs82XmgX6Va_BZ8tYauujcpAIZ4jwLcmDkSO4QfNd6ZjMm1js6M4AEPpZQboPwFmrqPLDTX-R0=w480-h960-rw",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ar.chandlabook"
+  }
+]
