@@ -336,14 +336,29 @@ document.addEventListener('DOMContentLoaded', () => {
           submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         }
 
-        setTimeout(() => {
+        const formData = new FormData(contactForm);
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        })
+        .then(async (response) => {
+          if (response.ok) {
+            contactForm.reset();
+            showToast('Thank you! Your message has been sent successfully. We will get back to you shortly.');
+          } else {
+            const data = await response.json();
+            showToast(data.message || 'Something went wrong. Please try again.');
+          }
+        })
+        .catch(() => {
+          showToast('Failed to connect to the server. Please check your internet connection.');
+        })
+        .finally(() => {
           if (submitBtn) {
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalText;
           }
-          contactForm.reset();
-          showToast('Thank you! Your message has been sent successfully. We will get back to you shortly.');
-        }, 1500);
+        });
       } else {
         showToast('Please correct the highlighted fields before submitting.');
       }
