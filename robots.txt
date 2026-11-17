@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ardevlopers.github.io/ardeveloper25/sitemap.xml
